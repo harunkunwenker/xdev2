@@ -195,5 +195,5 @@ conn.logger.level = 'debug'
 * [`MhankBarBar`](https://github.com/MhankBarBar)
 * [`MRHRTZ`](https://github.com/MRHRTZ)
 * [`Hexagonz`](https://github.com/Hexagonz)
-* [`X DEV-TEAM`] (https://github.com/xdevteam404)
+* [`X DEV-TEAM`](https://github.com/xdevteam404)
 * [`ALL CREATOR`]
