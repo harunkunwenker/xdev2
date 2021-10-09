@@ -1,11 +1,11 @@
 exports.menu = (pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita) => {
 return`*╭─❒ 「 INFORMATION 」 ──────*
-*│*➪ *NAMA : OI ${pushname} LU GAY YA?*
+*│*➪ *NAMA :   ${pushname}*
 *│*➪ *WIB    : ${timeWib}*
 *│*➪ *WIT    : ${timeWit}*
 *│*➪ *WITA  : ${timeWita}*
-*│*➪ *CREATOR : 𝙺𝙸𝚉𝙰𝙺𝙸𝚇𝙳*
-*│*➪ *BOT NAME : ɪ ᴀᴍ ᴢᴀᴋʙᴏᴛᴢ*
+*│*➪ *CREATOR : TEAMIMOUTO*
+*│*➪ *BOT NAME : TEAMIMOUTO*
 *│*➪ *PREFIX : 「 MULTI PREFIX 」*
 *│*➪ *BOT MODE : ${banChats ? "SELF-MODE" : "PUBLIC-MODE"}*
 *└──────────────────❒*
@@ -182,12 +182,12 @@ return`*╭─❒ 「 INFORMATION 」 ──────*
 *╭─❒ 「 THANKS TO 」* 
 *│*
 *├  ⎔  : Allah Swt*
-*├  ⎔  : 𝙺𝙸𝚉𝙰𝙺𝙸𝚇𝙳*
+*├  ⎔  : TEAMIMOUTO*
 *├  ⎔  : YakkoXCode*
 *├  ⎔  : ざきﾗhﾏd*
 *├  ⎔  : Akira*
 *├  ⎔  : 𝗙𝗔𝗨𝗭𝗔𝗡 𝗕𝗢𝗧𝗭🅥*
-*├  ⎔  : X - Team Dev*
+*├  ⎔  : X - Dev Team*
 *├  ⎔  : Vall Popaye*
 *├  ⎔  : Aldi Fauzi*
 *├  ⎔  : Penyedia Apikey*
@@ -196,5 +196,5 @@ return`*╭─❒ 「 INFORMATION 」 ──────*
 *│*
 *└──────────────────❒*
 
-▢ _*𝘽𝙊𝙏 𝘽𝙔 𝙆𝙄𝙕𝘼𝙆𝙄𝙓𝘿*_ ▢`
+▢ _*𝘽𝙊𝙏 𝘽𝙔 TEAMIMOUTO*_ ▢`
 }
