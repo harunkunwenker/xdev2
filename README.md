@@ -8,7 +8,7 @@
 >
 </div>
 <p align="center">
-  <a href="https://github.com/KiZakiXD"><img title="Remake" src="https://img.shields.io/badge/Author-KiZakiXD-red.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/harunkunwenker"><img title="Remake" src="https://img.shields.io/badge/Author-KiZakiXD-red.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a href="https://wa.me/285878313791"> I Am Wibu >//< </a>
 </h4>
@@ -72,16 +72,16 @@ ___
 ## CARA INSTALL DI TERMUX
 ```bash
 > pkg install nodejs && pkg install git
-> git clone https://github.com/KiZakiXD/zakbotz02
-> cd zakbotz02
+> git clone https://github.com/harunkunwenker/xdev2
+> cd xdev2
 > bash install.sh / npm install
 > npm update
 > npm start/node main.js
 ```
 ## CARA INSTALL DI RDP
 ```bash
-> git clone https://github.com/KizakiXD/zakbotz02 
-> cd zakbotzv02
+> git clone https://github.com/harunkunwenker/xdev2 
+> cd xdev2
 > npm i
 > npm update
 > npm start/node main.js
@@ -184,9 +184,9 @@ conn.logger.level = 'debug'
 
 ---------
 
- [![X-Dev Team](https://github.com/xdevteam404.png?size=100)](https://github.com/xdevteam404) | [![KiZakiXD](https://github.com/KiZakiXD.png?size=100)](https://github.com/KiZakiXD)
+ [![X-Dev Team](https://github.com/xdevteam404.png?size=100)](https://github.com/xdevteam404) | [![harunkunwenker](https://github.com/harunkunwenker.png?size=100)](https://github.com/KiZakiXD)
 ----|----
-[X-Dev Team](https://github.com/xdevteam404) | [KiZakiXD](https://github.com/KiZakiXD)
+[X-Dev Team](https://github.com/xdevteam404) | [KiZakiXD](https://github.com/harunkunwenker)
  Penulis / Pencipta | Penulis ulang / Remake
 
 
