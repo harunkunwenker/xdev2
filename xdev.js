@@ -65,12 +65,12 @@ let imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
 let videonye = JSON.parse(fs.readFileSync('./temp/video.json'))
 let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 
-banChats = true
+banChats = false
 offline = false
 targetpc = '0'
 ownerNumber = ["48732105404@s.whatsapp.net","48732105404@s.whatsapp.net","48732105404@s.whatsapp.net","48732105404@s.whatsapp.net"]
 fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n TEAMIMOUTO'
-fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 TEAMIMOUTO*_'
+fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 ᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ*_'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -156,12 +156,12 @@ module.exports = xdev = async (xdev, dev) => {
         //MESS
 		mess = {
 			wait: '_Tunggu sebentar ya kak_',
-			admin: '_Kusus Pejabat Grup',
-			owner: '_Kusus Anu',
+			admin: '_Kusus Admin_',
+			owner: '_Kusus Owner_',
 			success: '√ Done!',
-			wrongFormat: 'Format Salah Tod',
+			wrongFormat: 'Format Salah, Coba Liat Lagi di Menu',
 			error: {
-				stick: 'bukan sticker tu',
+				stick: 'bukan sticker itu',
 				Iv: 'Linknya error!'
 			},
 			only: {
@@ -173,7 +173,7 @@ module.exports = xdev = async (xdev, dev) => {
         }
         //FAKEREPLY PRODUCT
             const ftoko = {
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60139571124@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./stik/thumb.jpeg`)},"title": `OPEN BO BANG?\n${pushname}`,"description": "ɪ ᴀᴍ ᴢᴀᴋʙᴏᴛᴢ", "currencyCode": "IDR","priceAmount1000": "9999999999","retailerId": "ɪ ᴀᴍ ᴢᴀᴋʙᴏᴛᴢ","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60139571124@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./stik/thumb.jpeg`)},"title": `OPEN BO BANG?\n${pushname}`,"description": "᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ", "currencyCode": "IDR","priceAmount1000": "9999999999","retailerId": "᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
             //FAKE KONTAK
             const fkontak = { 
                   key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `0@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}
@@ -316,12 +316,6 @@ module.exports = xdev = async (xdev, dev) => {
                     fs.unlinkSync(filename)
                 });
             }   
-            
-
-            var chats = await xdev.chats.array.filter(v => v.jid.endsWith('g.us'))
-            chats.map( async ({ jid }) => {
-            await xdev.chatRead(jid)
-            })
             //AUTO RESPON
       for (let i = 0; i < commandsDB.length ; i++) {
       if (budy == commandsDB[i].pesan) {
@@ -356,7 +350,7 @@ module.exports = xdev = async (xdev, dev) => {
             if (isAfk(dev.key.remoteJid)) return
             addafk(dev.key.remoteJid)
             heheh = ms(Date.now() - waktu) 
-            xdev.sendMessage(dev.key.remoteJid,`@${owner} Sedang Offline!\n\n*Alasan :* ${alasan}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
+            xdev.sendMessage(dev.key.remoteJid,`@${owner} Sedang Offline!\n\n*Alasan :* ${alasan}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik yang lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
             }
             }   
         if (dev.key.remoteJid.endsWith('@g.us') && offline) {
@@ -369,7 +363,7 @@ module.exports = xdev = async (xdev, dev) => {
         if (isAfk(dev.key.remoteJid)) return
         addafk(dev.key.remoteJid)
         heheh = ms(Date.now() - waktu)
-        xdev.sendMessage(dev.key.remoteJid,`@${owner} Sedang Offline!\n\n *Alasan :* ${alasan}\n *Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
+        xdev.sendMessage(dev.key.remoteJid,`@${owner} Sedang Offline!\n\n *Alasan :* ${alasan}\n *Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik yang lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
           }
         }
             }
@@ -408,7 +402,7 @@ module.exports = xdev = async (xdev, dev) => {
 if (isBanchat){
 if (!isOwner) return
 if (chatss.toLowerCase().startsWith('unbanchat')){
-if (!isBanchat) return reply(`udah di UnBan`)
+if (!isBanchat) return reply(`Udah di UnBan`)
 let anu = bancht.indexOf(from)
 bancht.splice(anu, 1)
 fs.writeFileSync('./database/banchat.json', JSON.stringify(bancht))
@@ -498,7 +492,7 @@ gbutsan = [
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
     contentText: help.menu(pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita),
-    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 TEAMIMOUTO*_`,
+    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 ᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ*_`,
     buttons: gbutsan,
     headerType: 4
 }
@@ -887,7 +881,7 @@ break
 case 'antilink':
 					if (!isGroup) return reply('Kusus group')
 					if (!isGroupAdmins) return reply('Kusus admin')
-					if (!isBotGroupAdmins) return reply('Bot jadiin admin dlu')
+					if (!isBotGroupAdmins) return reply('Bot jadiin admin dulu')
 					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}antilink 1`)
 					if (Number(args[0]) === 1) {
 						if (isAntiLink) return reply('Sudah Aktif Kak')
@@ -1271,7 +1265,7 @@ let ini_list = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'ɪ ᴀᴍ ᴢᴀᴋʙᴏᴛᴢ',
+"displayName": '᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -1331,7 +1325,7 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
             encmedia = JSON.parse(JSON.stringify(dev).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		    media = await xdev.downloadAndSaveMediaMessage(encmedia)
             anu = args.join(' ').split('|')
-            satu = anu[0] !== '' ? anu[0] : `TEAMIMOUTO`
+            satu = anu[0] !== '' ? anu[0] : `᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ`
             dua = typeof anu[1] !== 'undefined' ? anu[1] : ``
             require('./lib/fetcher.js').createExif(satu, dua)
 			require('./lib/fetcher.js').modStick(media, xdev, dev, from)
@@ -2274,7 +2268,7 @@ let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'TEAMIMOUTO',
+"displayName": '᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2296,7 +2290,7 @@ if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
 qur = budy.slice(2)
 exec(qur, (err, stdout) => {
-if (err) return reply(`@TEAMIMOUTO:~ ${err}`)
+if (err) return reply(`@᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ:~ ${err}`)
 if (stdout) {
 reply(stdout)
 }
