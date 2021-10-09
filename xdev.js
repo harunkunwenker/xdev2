@@ -2296,7 +2296,7 @@ if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
 qur = budy.slice(2)
 exec(qur, (err, stdout) => {
-if (err) return reply(`@𝙺𝙸𝚉𝙰𝙺𝙸𝚇𝙳:~ ${err}`)
+if (err) return reply(`@TEAMIMOUTO:~ ${err}`)
 if (stdout) {
 reply(stdout)
 }
