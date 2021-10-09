@@ -1,4 +1,4 @@
-// SC BY 𝙺𝙸𝚉𝙰𝙺𝙸𝚇𝙳
+// SC BY TEAMIMOUTO
 // JANGAN DIPERJUAL BELIKAN !
 // SC PREMIUMNYA FULL MODULE!
 const
@@ -68,9 +68,9 @@ let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 banChats = true
 offline = false
 targetpc = '0'
-ownerNumber = ["6285878313791@s.whatsapp.net","6283803284713@s.whatsapp.net","6287705048235@s.whatsapp.net","6289512695391@s.whatsapp.net"]
-fake = 'ɪ ᴀᴍ ᴢᴀᴋʙᴏᴛᴢ'
-fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝙺𝙸𝚉𝙰𝙺𝙸𝚇𝙳*_'
+ownerNumber = ["48732105404@s.whatsapp.net","48732105404@s.whatsapp.net","48732105404@s.whatsapp.net","48732105404@s.whatsapp.net"]
+fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n TEAMIMOUTO'
+fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 TEAMIMOUTO*_'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -334,7 +334,7 @@ module.exports = xdev = async (xdev, dev) => {
 				if (!isAntiLink) return
 				if (isGroupAdmins) return
 				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-				reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup, botpunya auto kick lho hehe:(`)
+				reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup, maaf kamu di kick dari grup :(`)
 				setTimeout(() => {
 				xdev.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
 				}, 0)
@@ -493,12 +493,12 @@ mhan = await xdev.prepareMessage(from, gambar, image, {thumbnail: gambar})
 gbutsan = [
   {buttonId: 'CREATOR', buttonText: {displayText: '👤 CREATOR'}, type: 1},
   {buttonId: 'GITHUB', buttonText: {displayText: '⎙ GITHUB'}, type: 1},
-  {buttonId: 'YOUTUBE', buttonText: {displayText: '🔍 NEKOPOI'}, type: 1}
+  {buttonId: 'WAIFUPLAY', buttonText: {displayText: '🔍 WAIFUPLAY'}, type: 1}
 ]
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
     contentText: help.menu(pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita),
-    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝙺𝙸𝚉𝙰𝙺𝙸𝚇𝙳*_`,
+    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 TEAMIMOUTO*_`,
     buttons: gbutsan,
     headerType: 4
 }
@@ -1290,7 +1290,7 @@ case 'style':
     })
 			break
 case 'pastebin':
-if(!q) return reply(`Example : ɪ ᴀᴍ ᴢᴀᴋʙᴏᴛᴢ`)
+if(!q) return reply(`Example : TEAMIMOUTO`)
 anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text=${q}`, {method: 'get'})
                    xdev.sendMessage(from, `${anu.result}`, text, {quoted: ftroli})
                      break
@@ -1327,11 +1327,11 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
             break    
     case 'take':
     case 'colong':
-    		if (!isQuotedSticker) return reply('Stiker aja om')
+    		if (!isQuotedSticker) return reply('Stiker aja ngab')
             encmedia = JSON.parse(JSON.stringify(dev).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		    media = await xdev.downloadAndSaveMediaMessage(encmedia)
             anu = args.join(' ').split('|')
-            satu = anu[0] !== '' ? anu[0] : `𝙺𝙸𝚉𝙰𝙺𝙸𝚇𝙳`
+            satu = anu[0] !== '' ? anu[0] : `TEAMIMOUTO`
             dua = typeof anu[1] !== 'undefined' ? anu[1] : ``
             require('./lib/fetcher.js').createExif(satu, dua)
 			require('./lib/fetcher.js').modStick(media, xdev, dev, from)
@@ -1640,7 +1640,7 @@ break
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                         .then(async (a) => {
-                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam devtuk link_`)
+                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
                         const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                         sendMediaURL(from, thumb, captions)
                         await sendMediaURL(from, dl_link).catch(() => reply('error'))
@@ -1724,7 +1724,7 @@ xdev.updatePresence(from, Presence.composing)
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                         .then(async (a) => {
-                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam devtuk link_`)
+                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
                         const captions = `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                         sendMediaURL(from, thumb, captions)
                         await sendMediaURL(from, dl_link).catch(() => reply('error'))
@@ -1910,7 +1910,7 @@ break
 				const { dl_link, thumb, title, filesizeF, filesize } = res
 				axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 				.then((a) => {
-				if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `*YTMP 4!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam devtuk link_`)
+				if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `*YTMP 4!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
 				const captionsYtmp4 = `*Data Berhasil Didapatkan!*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 				sendMediaURL(from, thumb, captionsYtmp4)
 				sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
@@ -1940,7 +1940,7 @@ break
 				const { dl_link, thumb, title, filesizeF, filesize } = res
 				axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 				.then((a) => {
-			    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `*Data Berhasil Didapatkan!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam devtuk link_`)
+			    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `*Data Berhasil Didapatkan!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
 				const captions = `*YTMP3*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 				sendMediaURL(from, thumb, captions)
 				sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
@@ -2206,7 +2206,7 @@ ${owner ? `*Owner* : @${owner.split('@')[0]}` : '*Owner* : -'}
 *Jumlah Member* : ${size}
 ${desc ? `*Desc* : ${desc}` : '*Desc* : tidak ada'}
 *Id desc* : ${descId}
-${descOwner ? `*Desc diubah oleh* : @${descOwner.split('@')[0]}` : '*Desc diubah oleh* : -'}\n*Tanggal* : ${descTime ? `${formatDate(descTime * 1000)}` : '-'}\n\n*Kontak yang tersimpan*\n`
+${descOwner ? `*Desc diubah oleh* : @${descOwner.split('@')[0]}` : '*Desc diubah oleh* : +'}\n*Tanggal* : ${descTime ? `${formatDate(descTime * 1000)}` : '+'}\n\n*Kontak yang tersimpan*\n`
            for ( let y of participants) {
              par += `> @${y.id.split('@')[0]}\n*Admin* : ${y.isAdmin ? 'Ya' : 'Tidak'}\n`
              jids.push(`${y.id.replace(/@c.us/g,'@s.whatsapp.net')}`)
@@ -2227,7 +2227,7 @@ ${descOwner ? `*Desc diubah oleh* : @${descOwner.split('@')[0]}` : '*Desc diubah
 					enmedia = JSON.parse(JSON.stringify(dev).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await xdev.downloadAndSaveMediaMessage(enmedia)
 					await xdev.updateProfilePicture(botNumber, media)
-					reply('Nah Gitu Ganti Profilnya Anjeng')
+					reply('Makasih profil barunya😗')
 					break
 					
 										case 'sider':
@@ -2274,7 +2274,7 @@ let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'KIZAKIXD',
+"displayName": 'TEAMIMOUTO',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2282,15 +2282,15 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${inilist.length} kontak`,
 "contacts": inilist 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'Ni Bawahan ᴢᴀᴋʙᴏᴛᴢ',text,{quoted: hehe})
+xdev.sendMessage(from,'Nih Kak Creator TEAMIMOUTO',text,{quoted: hehe})
 }
 if (button == '⎙ GITHUB') {
 console.log('GITHUB')
-xdev.sendMessage(from, `*Stalkerin Aja Tuh*\n*https://github.com/kizakixd*`, text, {quoted: dev})
+xdev.sendMessage(from, `*Stalkerin Aja Tuh*\n*https://github.com/harunkunwenker*`, text, {quoted: dev})
 }
-if (button == '🔍 NEKOPOI') {
-console.log('YOUTUBE')
-xdev.sendMessage(from, `*Subscribe Chanel Owner Ya*\n_https://m.youtube.com/channel/UCHdipvk52k43KsPRenGpD0w_`, text, {quoted: dev})
+if (button == '🔍 WAIFUPLAY') {
+console.log('WAIFUPLAY')
+xdev.sendMessage(from, `*Yok yang mau streaming anime bisa mampir di sini :)*\n_https://waifuplay.me/_`, text, {quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
