@@ -1488,7 +1488,7 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
 					break
 			
 				
-							case 'addimg':
+						 case 'addimg':
 				if (!dev.key.fromMe && !isOwner) return reply (mess.owner)
 				if (!isQuotedImage) return reply('Reply imagenya')
 				svst = body.slice(8)
