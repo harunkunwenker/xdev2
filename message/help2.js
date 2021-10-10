@@ -1,1 +1,3 @@
-TEAMIMOUTO
+exports.help2 = () => {
+return``
+}
