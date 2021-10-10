@@ -1,4 +1,4 @@
-// SC BY TEAMIMOUTO
+// SC BY ᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ
 // JANGAN DIPERJUAL BELIKAN !
 // SC PREMIUMNYA FULL MODULE!
 const
@@ -69,7 +69,7 @@ banChats = false
 offline = false
 targetpc = '0'
 ownerNumber = ["380944486343@s.whatsapp.net","380944486343@s.whatsapp.net","3809444863434@s.whatsapp.net","380944486343@s.whatsapp.net"]
-fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n TEAMIMOUTO'
+fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n ᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ'
 fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 ᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ*_'
 numbernye = '0'
 waktu = '-'
