@@ -9,6 +9,6 @@
   }, {
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   }, {
-    "url": "https://github.com/webmproject/libwebp"
+    "url": "https://github.com/jayshreeanand/heroku-buildpack-libwebp"
   }]
 }
