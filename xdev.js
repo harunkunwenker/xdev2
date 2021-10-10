@@ -1321,11 +1321,11 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
             break    
     case 'take':
     case 'colong':
-    		if (!isQuotedSticker) return reply('Stiker aja ngab')
+    		if (!isQuotedSticker) return reply('Stiker aja om')
             encmedia = JSON.parse(JSON.stringify(dev).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		    media = await xdev.downloadAndSaveMediaMessage(encmedia)
             anu = args.join(' ').split('|')
-            satu = anu[0] !== '' ? anu[0] : `᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ`
+            satu = anu[0] !== '' ? anu[0] : `X - Dev Team`
             dua = typeof anu[1] !== 'undefined' ? anu[1] : ``
             require('./lib/fetcher.js').createExif(satu, dua)
 			require('./lib/fetcher.js').modStick(media, xdev, dev, from)
