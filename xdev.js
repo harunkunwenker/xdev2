@@ -65,7 +65,7 @@ let imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
 let videonye = JSON.parse(fs.readFileSync('./temp/video.json'))
 let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 
-banChats = false
+banChats = true
 offline = false
 targetpc = '0'
 ownerNumber = ["380944486343@s.whatsapp.net","380944486343@s.whatsapp.net","3809444863434@s.whatsapp.net","380944486343@s.whatsapp.net"]
