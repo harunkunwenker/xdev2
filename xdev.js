@@ -476,12 +476,12 @@ if (atibot === true) return
 
 switch (command) {
     case 'menu':
-    case 'p':
+    case 'help':
     const timestampp = speed();
 	const latensii = speed() - timestampp
 	run = process.uptime() 
     teks = `${kyun(run)}`
-gambur = 'https://i.ibb.co/wJj8tn8/thumb.jpg'
+gambur = 'https://i.ibb.co/QfxVgFN/imgbaner.jpg'
 gambar = await getBuffer(gambur)
 mhan = await xdev.prepareMessage(from, gambar, image, {thumbnail: gambar})
 gbutsan = [
